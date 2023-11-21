@@ -57,7 +57,7 @@ void quick_s(int *array, size_t size, ssize_t low, ssize_t high)
 		size_t p = lomuto(array, size, low, high);
 
 		quick_s(array, size, low, p - 1);
-		quick_s(array, size, high, p + 1);
+		quick_s(array, size,  p + 1, high);
 	}
 }
 
